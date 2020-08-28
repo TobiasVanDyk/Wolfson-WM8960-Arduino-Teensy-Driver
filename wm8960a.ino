@@ -1,5 +1,5 @@
 // --------------------------------------
-// Tobias van Dyk
+// Tobias van Dyk Aug 2020
 // Based on Wolfson WM8960 STM32 demo code from Waveshare
 // Demo code BSD license from STMicroelectronics
 //

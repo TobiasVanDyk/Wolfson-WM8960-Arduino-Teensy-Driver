@@ -215,16 +215,9 @@ void setup()
   pinMode(led, OUTPUT);
   AudioMemory(12);
 
-  
-  // uncomment these to use alternate pins
-  //Wire.setSCL(16);
-  //Wire.setSDA(17);
   Wire.begin();           // join i2c bus (address optional for master)
   //Serial.begin(9600);
   
-  //while (!Serial);        // Leonardo: wait for serial monitor
-  //Serial.println(F("\nI2C Scanner"));
-
   res = WM89060_Init();
   //if (res != 0) Serial.println(res);
 

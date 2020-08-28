@@ -1,6 +1,6 @@
 // --------------------------------------
 // Tobias van Dyk
-// Based on Wolfson WM8960 STM32 code from Cirrus Logic
+// Based on Wolfson WM8960 STM32 demo code from Waveshare
 //
 ////////////////////////////////////////////////////////////////////////////
 //       WM8960-DAC      Teensy 4      Teensy 3.6       Audioboard 3

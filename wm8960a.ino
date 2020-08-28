@@ -4,7 +4,7 @@
 // Demo code BSD license from STMicroelectronics
 //
 ////////////////////////////////////////////////////////////////////////////
-//       WM8960-DAC      Teensy 4      Teensy 3.6       Audioboard 3
+//       WM8960-DAC      Teensy 4.1    Teensy 3.6       Audioboard 3
 //  1,2  VCC      Red    3V3 *         3V3 
 //  3,4  GND    Brown    GND *         GND (not AGnd)
 //  5,6  SDA     Gray    18 SDA0 *     18 SDA0         18 SDA  
@@ -12,9 +12,9 @@
 //  9,10 CLK     Blue    21 BCLK1 *     9 BCK           9 BCLK
 // 11,12 WS     White    20 LRCLK1 *  23 LRCK          23 LRCLK   I2S Frame clock input
 // 13    RXSDA   Green    7 OUT1A *    22 TX           22 TX      I2S Data output
-// 14    TXSDA    Blue                  22 TX            13 RX      I2S Data input
+// 14    TXSDA    Blue                  22 TX            13 RX    I2S Data input
 // 15    RXMCLK                                                   I2S System Clock(Sending)
-// 16    TXMCLK                                                    I2SSystem Clock(Receive)
+// 16    TXMCLK                                                   I2SSystem Clock(Receive)
 // WM8960_ADDRESS = 0x1a 
 // MCLK signal transmitted (TX MCLK RX) MCLK signal transmitted   
 // * = usb audio working     

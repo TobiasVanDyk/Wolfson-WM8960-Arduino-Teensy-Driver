@@ -17,9 +17,14 @@ Driver and example applications for Arduino and Teensy MCUs for the Wolfson WM89
 <img src="images/WM8960HatSchematic.jpg" width="300" />   
 <br
 
-**Teensy 4.1 and Teensy 3.6 with the Waveshare WM8960 Stereo CODEC as Audio DAC:**
+**Teensy 4.1 and Teensy 3.6 with the Waveshare WM8960 Stereo CODEC as USB Audio DAC:**
 <p align="left">
 <img src="images/wm8960.jpg" width="600" />  
+<br>
+  
+**Teensy 4.0 and the Waveshare WM8960 Stereo CODEC as USB Audio DAC:**
+<p align="left">
+<img src="images/teensy40-wm8960.jpg" width="600" />  
 <br>
 
 **Raspberry Pi and Waveshare WM8960 as Audio DAC:**

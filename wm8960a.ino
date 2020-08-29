@@ -125,7 +125,7 @@ uint8_t WM89060_Init(void)  {
   delay(delay1);
   
   // Configure clock
-  // PLL->MCLK->SYSCLK->DAC/ADC sample Freq = 24MHz/544.217 = 44.100kHz
+  // MCLK->PLL->SYSCLK->DAC/ADC sample Freq = 24MHz/544.217 = 44.100kHz
   // See calculation pages 60 and table 44 in manual
   // f2 = 4 x 2 x 11.2896Hz = 90.3168MHz
   // R = 90.316 / 12 = 7.5264

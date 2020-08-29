@@ -32,3 +32,9 @@ Driver and example applications for Arduino and Teensy MCUs for the Wolfson WM89
 <img src="images/rpimodule.jpg" width="300" />  
 <img src="images/rpirpi1.jpg" width="300" /> 
 <br
+
+The WM8960 CODEC is also used by the [**Seeed voicecard**](https://github.com/respeaker/seeed-voicecard) or [**ReSpeaker 2-Mics Pi HAT**](https://wiki.seeedstudio.com/ReSpeaker_2_Mics_Pi_HAT/).
+<p align="left">
+<img src="images/respeaker1.jpg" width="300" />  
+<img src="images/respeaker2.jpg" width="300" /> 
+<br

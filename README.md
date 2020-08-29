@@ -7,6 +7,7 @@ Example applications of an Arduino and Teensy driver for the Wolfson WM8960 Audi
 <p align="left">
 <img src="images/module1.jpg" width="200" />  
 <img src="images/module2.jpg" width="200" /> 
+<img src="WM8960Schematic.jpg" width="300" /> 
 <br>
 
 [**Waveshare WM8960 Hi-Fi Sound Card HAT for Raspberry Pi**](https://www.waveshare.com/wm8960-audio-hat.htm)

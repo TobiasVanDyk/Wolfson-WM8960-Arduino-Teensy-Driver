@@ -12,7 +12,7 @@
 //  9,10 CLK     Blue    21 BCLK1 *     9 BCK           9 BCLK
 // 11,12 WS     White    20 LRCLK1 *  23 LRCK          23 LRCLK   I2S Frame clock input
 // 13    RXSDA   Green    7 OUT1A *    22 TX           22 TX      I2S Data output
-// 14    TXSDA    Blue                  22 TX            13 RX    I2S Data input
+// 14    TXSDA    Blue                 13 RX           13 RX      I2S Data input
 // 15    RXMCLK                                                   I2S System Clock(Sending)
 // 16    TXMCLK                                                   I2SSystem Clock(Receive)
 // WM8960_ADDRESS = 0x1a 
@@ -125,7 +125,14 @@ uint8_t WM89060_Init(void)  {
   delay(delay1);
   
   // Configure clock
-  // MCLK->div1->SYSCLK->DAC/ADC sample Freq = 24MHz(MCLK)/2*256 = 46.875kHz
+  // PLL->MCLK->SYSCLK->DAC/ADC sample Freq = 24MHz/544 = 44.100kHz
+  // See calculation pages 60 and table 44 in manual
+  // f2 = 4 x 2 x 11.2896Hz = 90.3168MHz
+  // R = 90.316 / 12 = 7.5264
+  // PLLN = int R = 7
+  // k = int ( 2^24 x (7.5264 – 7)) = 8831526
+  // N = 7
+  // Fractional 24bit value = 86C226h
   res = WM8960_Write_Reg(0x04, 0x0001); // Select PLL
   //if (res == 0) Serial.println("WM8960 Configure clock"); else return res;
   delay(delay1);

@@ -226,7 +226,7 @@ void setup()
   Wire.begin();           // join i2c bus (address optional for master)
   //Serial.begin(9600);
   
-  res = WM89060_Init();
+  res = WM89060_Init();   // let the magic start
   //if (res != 0) Serial.println(res);
 
 }
@@ -237,7 +237,7 @@ void setup()
 void loop() 
 {
   
-  delay(100);           // wait 5 seconds for next scan
+  delay(100);         
  
 
 }

@@ -1,10 +1,10 @@
 //////////////////////////////////////////////////////////////////////////////////////////
-// GPL3 license Tobias van Dyk Aug 2020
-// Based on Wolfson WM8960 STM32 demo code from Waveshare
-// Demo code BSD license from STMicroelectronics
-// Also used WM8960 ALSA SoC Audio driver 2007 Wolfson Microelectronics (Liam Girdwood)
-// which is GPL2 licensed code 
-// Teensy libraries property of PJRC.com
+// GPL3 license Tobias van Dyk Aug 2020.
+// Based on Wolfson WM8960 STM32 demo code from Waveshare.
+// Demo code BSD license from STMicroelectronics.
+// Also used WM8960 ALSA SoC Audio driver 2007 Wolfson Microelectronics 
+// (Liam Girdwood). which is GPL2 licensed code. 
+// Teensy libraries property of PJRC.com.
 /////////////////////////////////////////////////////////////////////////////////////////
 //       WM8960-DAC      Teensy 4.1    Teensy 3.6       Audioboard 3
 //  1,2  VCC      Red    3V3 *         3V3 
@@ -25,7 +25,7 @@
 //                                                      12 MISO
 //                                                      14 SCLK
 //                                                    6,10 CS
-///////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////
 
 #include <Wire.h>
 

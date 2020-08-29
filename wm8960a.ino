@@ -12,11 +12,11 @@
 //  5,6  SDA     Gray    18 SDA0 *     18 SDA0         18 SDA  
 //  7,8  SCL   Orange    19 SCL0 *     19 SCL0         19 SCL  
 //  9,10 CLK     Blue    21 BCLK1 *     9 BCK           9 BCLK
-// 11,12 WS     White    20 LRCLK1 *  23 LRCK          23 LRCLK   I2S Frame clock input
+// 11,12 WS     White    20 LRCLK1 *   23 LRCK         23 LRCLK   I2S Frame clock input
 // 13    RXSDA   Green    7 OUT1A *    22 TX           22 TX      I2S Data output
 // 14    TXSDA    Blue                 13 RX           13 RX      I2S Data input
 // 15    RXMCLK                                                   I2S System Clock(Sending)
-// 16    TXMCLK                                                   I2SSystem Clock(Receive)
+// 16    TXMCLK                                                   I2S System Clock(Receive)
 // WM8960_ADDRESS = 0x1a 
 // MCLK signal transmitted (TX MCLK RX) MCLK signal transmitted   
 // * = usb audio working     
@@ -57,7 +57,6 @@ AudioConnection          patchCord2(usb1, 1, i2s1, 1);
 
  int delay1 = 10;
  int delay2 = 500;
- 
 
 //////////////////////////////////////////////////////////////////////////////////////////////////
 // Registers of WM8960 are 9-bit. Thus, when we send data to it, 
@@ -116,7 +115,7 @@ uint8_t WM89060_Init(void)  {
   // Set Power Source
   // #define WM8960_POWER1  0x19
   // #define WM8960_POWER2  0x1a
-  // #define WM8960_ADDCTL3 0x1b **************
+  // #define WM8960_ADDCTL3 0x1b 
   // #define WM8960_POWER3  0x2f
   res =  WM8960_Write_Reg(0x19, 1<<8 | 1<<7 | 1<<6);
   delayMicroseconds(delay2);
@@ -139,8 +138,8 @@ uint8_t WM89060_Init(void)  {
   //if (res == 0) Serial.println("WM8960 Configure clock"); else return res;
   delay(delay1);
 
-  // Configure PLL 1  0011 0111 = 37h
-  //                 00010 0111   27h
+  // Configure PLL 1  0011 0111 = 37h ok
+  //                 00010 0111   27h also ok ?
   res = WM8960_Write_Reg(0x34, 0x0027); // Select PLL 1
   delay(delay1);
 

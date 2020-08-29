@@ -1,5 +1,5 @@
 # Wolfson-WM8960-Arduino-Teensy-Driver
-Example applications of an Arduino and Teensy driver for the Wolfson WM8960 Audio DAC
+Driver and example applications for Arduino and Teensy MCUs for the Wolfson WM8960 Audio DAC
 
 [**Cirrus Logic Product WM8960**](https://www.cirrus.com/products/wm8960/) 
 

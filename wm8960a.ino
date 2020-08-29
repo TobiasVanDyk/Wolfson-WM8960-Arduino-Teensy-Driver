@@ -81,9 +81,9 @@ uint8_t WM8960_Write_Reg(uint8_t reg, uint16_t dat)
   //digitalWrite(led, HIGH);                              // briefly flash the LED
 
   Wire.beginTransmission(WM8960_ADDRESS);  // transmit to device lsb=0 => write
-  //Wire.write(I2C_Data[0]);                  // buffer 1 byte reg1 in b7-b1
-  //Wire.write(I2C_Data[1]);                  // buffer 1 byte lsb of val1
-  Wire.write(I2C_Data, 2);                    // buffer 1 byte lsb of val1
+  //Wire.write(I2C_Data[0]);                  // buffer 1 byte reg in b7-b1. b0 = dat b8
+  //Wire.write(I2C_Data[1]);                  // buffer 1 byte dat b7-b0
+  Wire.write(I2C_Data, 2);                    // buffer 2 bytes of reg and dat
   res = Wire.endTransmission();               // transmit buffer and then stop
 
   if(res == 0) { WM8960_REG_VAL[reg] = dat;

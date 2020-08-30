@@ -1,22 +1,23 @@
-//////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // GPL3 license Tobias van Dyk Aug 2020.
 // Based on Wolfson WM8960 STM32 demo code from Waveshare.
 // Demo code BSD license from STMicroelectronics.
 // Also used WM8960 ALSA SoC Audio driver 2007 Wolfson Microelectronics 
 // (Liam Girdwood). which is GPL2 licensed code. 
 // Teensy libraries property of PJRC.com.
-/////////////////////////////////////////////////////////////////////////////////////////
-//       WM8960-DAC      Teensy 4.1    Teensy 3.6       Audioboard 3
-//  1,2  VCC      Red    3V3 *         3V3 
-//  3,4  GND    Brown    GND *         GND (not AGnd)
-//  5,6  SDA     Gray    18 SDA0 *     18 SDA0         18 SDA  
-//  7,8  SCL   Orange    19 SCL0 *     19 SCL0         19 SCL  
-//  9,10 CLK     Blue    21 BCLK1 *     9 BCK           9 BCLK
-// 11,12 WS     White    20 LRCLK1 *   23 LRCK         23 LRCLK   I2S Frame clock input
-// 13    RXSDA   Green    7 OUT1A *    22 TX           22 TX      I2S Data output
-// 14    TXSDA    Blue                 13 RX           13 RX      I2S Data input
-// 15    RXMCLK                                                   I2S System Clock(Sending)
-// 16    TXMCLK                                                   I2S System Clock(Receive)
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//       WM8960-DAC      Teensy 4.1    Teensy 3.6       Audioboard 3  WM8960 RPi GPIO Hat 
+                                                                      2,4 5v
+//  1,2  VCC      Red    3V3 *         3V3                            1   NC (3v3)
+//  3,4  GND    Brown    GND *         GND (not AGnd)                 6   GND
+//  5,6  SDA     Gray    18 SDA0 *     18 SDA0         18 SDA         3   SDA
+//  7,8  SCL   Orange    19 SCL0 *     19 SCL0         19 SCL         5   SCL
+//  9,10 CLK     Blue    21 BCLK1 *     9 BCK           9 BCLK        12  PCMCLK BCLK
+// 11,12 WS     White    20 LRCLK1 *   23 LRCK         23 LRCLK       35  PCM_FS LRCLK i2s Frame clock input
+// 13    RXSDA   Green    7 OUT1A *    22 TX           22 TX          40  PCM_OUT I2S Data output
+// 14    TXSDA    Blue    8 TX1        13 RX           13 RX          38  PCM_IN  I2S Data input
+// 15    RXMCLK                                                                   I2S System Clock(Sending)
+// 16    TXMCLK                                                                   I2SSystem Clock(Receive)
 // WM8960_ADDRESS = 0x1a 
 // MCLK signal transmitted (TX MCLK RX) MCLK signal transmitted   
 // * = usb audio working     
@@ -25,7 +26,7 @@
 //                                                      12 MISO
 //                                                      14 SCLK
 //                                                    6,10 CS
-///////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 #include <Wire.h>
 

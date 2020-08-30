@@ -29,7 +29,7 @@ Driver and example applications for Arduino and Teensy MCUs for the Wolfson WM89
   
 **Teensy 4.1 and the Waveshare WM8960 Raspberry Pi Hat as USB Audio DAC:**
 
-Software is still experimental i.e. it does not consistantly works.
+This combination of the CODEC and Teensy is still being tested.
 <p align="left">
 <img src="images/rpihat.jpg" width="600" />  
 <br>

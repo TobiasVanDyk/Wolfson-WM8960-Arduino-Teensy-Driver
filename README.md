@@ -7,7 +7,7 @@ In addition the normal Teensy main volume control via two mono amplifiers will b
 
 Subjectively this 2007, 14 year old DAC outperforms its specifications. Listening to the same source material through the headphone output on the waveshare wm8960 hat dac, matches the listening experience when using the same headphones with a Creative AE-5 (which has a dedicated headphone amp), setup.
 
-Short interconnect wiring must be used - else 100 to 220 ohm resistors inline for all the i2s signal wiring can be used as was the case here.
+Short interconnect wiring must be used - else 100 to 220 ohm resistors inline for all the i2s signal wiring can be used as was the case here. 3k9 pullup resistors was also used on the i2c SDA and SCL lines.
 
 [**Cirrus Logic Product WM8960**](https://www.cirrus.com/products/wm8960/) 
 

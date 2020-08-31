@@ -33,7 +33,7 @@ In addition a section for the windows main volume control will be added (current
   
 **Teensy 4.1 and the Waveshare WM8960 Raspberry Pi Hat as USB Audio DAC:**
 
-This combination of the CODEC and Teensy sounds much better in the low range end due to the LC filter at the headphone plugs. It needs a new section of code to enable manual switching between speaker and headphones (similar to the option in the Linuc alsamixer).
+This combination of the CODEC and Teensy sounds much better in the low range end due to the LC filter at the headphone plug. It needs a new section of code to enable manual switching between speaker and headphones (similar to the option in the Linuc alsamixer).
 <p align="left">
 <img src="images/rpidacteensy41.jpg" width="600" />  
 <br>

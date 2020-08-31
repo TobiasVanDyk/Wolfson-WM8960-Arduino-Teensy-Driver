@@ -3,7 +3,7 @@ Driver and example applications for Arduino and Teensy MCUs for the Wolfson WM89
 
 Note the difference in the headphone output circuit between the Waveshare Raspberry Pi Hat (which is also used in the Seeed Studio Re-Speaker Hat), and the Waveshare Audio CODEC module. That combination of the CODEC and Teensy sounds much better in the low range end due to the LC filter at the headphone plug. The hat type of audio codec module needs an additional section of code in the main loop to enable manual switching between speaker and headphones (similar to the option in the Linux alsamixer) - this will be added soon. 
 
-In addition a section for the windows main volume control will be added (currently the application in windows control the DAC volume).
+In addition the normal Teensy main volume control via two mono amplifiers will be added (currently the application in windows control the DAC volume), after further testing on setting the WM8960 analog output volume directly through i2c control.
 
 [**Cirrus Logic Product WM8960**](https://www.cirrus.com/products/wm8960/) 
 

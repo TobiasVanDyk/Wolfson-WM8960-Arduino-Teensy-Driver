@@ -5,6 +5,8 @@ Note the difference in the headphone output circuit between the Waveshare Raspbe
 
 In addition the normal Teensy main volume control via two mono amplifiers will be added (currently the application in windows control the DAC volume), after further testing on setting the WM8960 analog output volume directly through i2c control.
 
+Subjectively, the headphone output on the waveshare hat dac, matches that experienced when using the same headphones with a Creative AE-5 setup.
+
 [**Cirrus Logic Product WM8960**](https://www.cirrus.com/products/wm8960/) 
 
 [**Waveshare WM8960 Stereo CODEC General purpose module**](https://www.waveshare.com/wm8960-audio-board.htm)

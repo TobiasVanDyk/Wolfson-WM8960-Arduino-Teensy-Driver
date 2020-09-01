@@ -251,7 +251,7 @@ void loop()
   amp2.gain(vol);
 
   vol1 = vol*31;
-  vol2 = vol1 + 0x005F;  // below 0x005F is mute for WM8960 SPK and HP 6bit volume control
+  vol2 = vol1 + 0x005F;  // below 0x005F is mute for WM8960 SPK and HP 7bit volume control
  
   
   delay(200);           

@@ -1,8 +1,10 @@
-////////////////////////////////////////////////////////////////////////////
-// Tobias van Dyk Aug 2020
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// GPL3 license Tobias van Dyk Aug 2020
 // Based on Wolfson WM8960 STM32 demo code from Waveshare
 // Demo code BSD license from STMicroelectronics
-//
+// Also based on WM8960 ALSA SoC Audio driver from Wolfson Microelectronics
+// 2007 GPL2 license Liam Girdwood
+// Teensy libraries property of PJRC.com
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //       WM8960-DAC      Teensy 4.0 and 4.1    Teensy 3.6       Audioboard 3  WM8960 RPi GPIO Hat 
 //                                                                    2,4 5v
@@ -10,7 +12,7 @@
 //  3,4  GND    Brown    GND                   GND (not AGnd)                 6   GND
 //  5,6  SDA     Gray    18 SDA0               18 SDA0         18 SDA         3   SDA
 //  7,8  SCL   Orange    19 SCL0               19 SCL0         19 SCL         5   SCL
-//  9,10 CLK     Blue    21 BCLK1              9 BCK           9 BCLK        12  PCMCLK BCLK
+//  9,10 CLK     Blue    21 BCLK1              9 BCK           9 BCLK         12  PCMCLK BCLK
 // 11,12 WS     White    20 LRCLK1             23 LRCK         23 LRCLK       35  PCM_FS LRCLK i2s Frame clock input
 // 13    RXSDA   Green    7 OUT1A              22 TX           22 TX          40  PCM_OUT I2S Data output
 // 14    TXSDA    Blue    8 TX1                13 RX           13 RX          38  PCM_IN  I2S Data input
@@ -250,7 +252,7 @@ void loop()
   amp1.gain(vol);        // set gain according to PC volume
   amp2.gain(vol);
 
-  vol1 = vol*31;
+  vol1 = vol*32;
   vol2 = vol1 + 0x005F;  // below 0x005F is mute for WM8960 SPK and HP 7bit volume control
  
   

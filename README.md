@@ -5,10 +5,12 @@ Note the difference in the headphone output circuit between the Waveshare Raspbe
 
 In addition the normal Teensy main volume control via two mono amplifiers will be added (currently the application in windows control the DAC volume), after further testing on setting the WM8960 analog output volume directly through i2c control.
 
-Subjectively this 2007, 14 year old DAC outperforms its specifications. Listening to the same source material through the headphone output on the waveshare wm8960 hat dac, matches the listening experience when using the same headphones with a Creative AE-5 (which has a dedicated headphone amp), setup.
+Subjectively this 2007, 14 year old DAC (Note 11) outperforms its specifications. Listening to the same source material through the headphone output on the waveshare wm8960 hat dac, matches the listening experience when using the same headphones with a Creative AE-5 (which has a dedicated headphone amp), setup.
 
 Short interconnect wiring must be used - else 100 to 220 ohm resistors inline for all the i2s signal wiring can be used as was the case here. 3k9 pullup resistors was also used on the i2c SDA and SCL lines.
 
+*Note 1: See WM8960-ALSA-driver folder for 2007 WM8960 ALSA SoC Audio driver (Wolfson Microelectronics (PLC).
+ 
 [**Cirrus Logic Product WM8960**](https://www.cirrus.com/products/wm8960/) 
 
 [**Waveshare WM8960 Stereo CODEC General purpose module**](https://www.waveshare.com/wm8960-audio-board.htm)

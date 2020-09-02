@@ -1,15 +1,16 @@
 # Wolfson-WM8960-Arduino-Teensy-Driver
-Proto-driver (eventually as a library), and example applications for Arduino and Teensy MCUs using the Wolfson WM8960 Audio DAC, with a seperate BTL 1W speaker and headphone amplifier (common grounded). (It should be possible to use the BTL speaker outputs through 100uF capacitors with common ground headphones as well.)
+Proto-driver (eventually as a library), and example applications for Arduino and Teensy MCUs using the Wolfson WM8960 Audio DAC, with a seperate BTL 1W speaker and headphone amplifier (common grounded) (Note 1). 
 
 Note the difference in the headphone output circuit between the Waveshare Raspberry Pi Hat (which is also used in the Seeed Studio Re-Speaker Hat), and the Waveshare Audio CODEC module. That combination of the CODEC and Teensy sounds much better in the low range possibly due to the LC filter configuration at the headphone plug. The hat type of audio codec module needs an additional section of code in the main loop to enable manual switching between speaker and headphones (similar to the option in the Linux alsamixer) - this will be added soon. Currently both are enabled for the hat type board.
 
 In addition the normal Teensy main volume control via two mono amplifiers will be added (currently the application in windows control the DAC volume), after further testing on setting the WM8960 analog output volume directly through i2c control.
 
-Subjectively this 2007, 14 year old DAC (Note 11) outperforms its specifications. Listening to the same source material through the headphone output on the waveshare wm8960 hat dac, matches the listening experience when using the same headphones with a Creative AE-5 (which has a dedicated headphone amp), setup.
+Subjectively this 2007, 14 year old DAC (Note 2) outperforms its specifications. Listening to the same source material through the headphone output on the waveshare wm8960 hat dac, matches the listening experience when using the same headphones with a Creative AE-5 (which has a dedicated headphone amp), setup.
 
 Short interconnect wiring must be used - else 100 to 220 ohm resistors inline for all the i2s signal wiring can be used as was the case here. 3k9 pullup resistors was also used on the i2c SDA and SCL lines.
 
-*Note 1: See WM8960-ALSA-driver folder for 2007 WM8960 ALSA SoC Audio driver (Wolfson Microelectronics (PLC)).*
+*Note 1: It should be possible to use the BTL speaker outputs isolated through 100uF capacitors, with common ground headphones.*
+*Note 2: See WM8960-ALSA-driver folder for 2007 WM8960 ALSA SoC Audio driver (Wolfson Microelectronics (PLC)).*
  
 [**Cirrus Logic Product WM8960**](https://www.cirrus.com/products/wm8960/) 
 

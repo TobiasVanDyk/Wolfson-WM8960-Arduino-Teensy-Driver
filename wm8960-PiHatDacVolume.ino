@@ -212,7 +212,7 @@ uint8_t WM89060_Init(void)  {
   //if (res == 0) Serial.println("WM8960 Configure MIXER"); else return res;
   delay(delay1);
 
-  // Jack Detect
+  // Jack Detect - not hardware configured on HAT board
   // res =  WM8960_Write_Reg(0x18, 1<<6 | 0<<5);
   res =  WM8960_Write_Reg(0x18, 0x0000);
   delayMicroseconds(delay2);

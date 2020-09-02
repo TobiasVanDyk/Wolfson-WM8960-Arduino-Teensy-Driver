@@ -3,7 +3,7 @@ Proto-driver (eventually as a library), and example applications for Arduino and
 
 Note the difference in the headphone output circuit between the Waveshare Raspberry Pi Hat (which is also used in the Seeed Studio Re-Speaker Hat), and the Waveshare Audio CODEC module. That specific board type and the Teensy, sounds much better in the low range possibly due in part, to the LC filter configuration at the headphone plug. The hat type of audio codec module lacks the optional hardware for headphone detection, and therefore it needs an additional section of code in the main loop to enable manual switching between speaker and headphones (similar to the option in the Linux alsamixer) - this will be added soon. Currently both outputs are enabled for the hat type board. The other type of audioboard has the headphone auto-detection circuitry enabled.
 
-In addition the normal Teensy main volume control via two mono amplifiers will be added (currently the application in windows control the DAC volume), after further testing on setting the WM8960 analog output volume directly through i2c control.
+In addition the standard Teensy main volume control via two mono amplifiers has been added for the hat type board (else only the current windows application control the DAC volume). Further testing on setting the WM8960 analog output volume directly through i2c control is also in progress.
 
 Subjectively this 2007, 14 year old DAC (Notes 3 and 4) outperforms its specifications. Listening to the same source material through the headphone output on the waveshare wm8960 hat dac, matches the listening experience when using the same headphones with a Creative AE-5 (which has a dedicated headphone amp), setup.
 

@@ -10,7 +10,7 @@ Subjectively this 2007, 14 year old DAC (Note 2) outperforms its specifications.
 Short interconnect wiring must be used - else 100 to 220 ohm resistors inline for all the i2s signal wiring can be used as was the case here. 3k9 pullup resistors was also used on the i2c SDA and SCL lines.
 
 *Note 1: It should be possible to use the BTL speaker outputs isolated through 100uF capacitors, with common ground headphones - refer to the block diagram.*<br>
-*Note 2: See WM8960-ALSA-driver folder for the original 2007 WM8960 ALSA SoC Audio driver from Wolfson Microelectronics (PLC).*
+*Note 2: See the WM8960-ALSA-driver folder above, for the original 2007 WM8960 ALSA SoC Audio driver from Wolfson Microelectronics (PLC).*
  
 [**Cirrus Logic Product WM8960**](https://www.cirrus.com/products/wm8960/) 
 

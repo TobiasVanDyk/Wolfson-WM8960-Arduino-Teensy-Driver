@@ -7,7 +7,7 @@ In addition the standard Teensy main volume control via two mono amplifiers has 
 
 Subjectively this 2007, 14 year old DAC (Notes 3 and 4) outperforms its specifications. Listening to the same source material through the headphone output on the waveshare wm8960 hat dac, matches the listening experience when using the same headphones with a Creative AE-5 (which has a dedicated headphone amp), setup.
 
-Short interconnect wiring must be used - else 100 to 220 ohm resistors inline for all the i2s signal wiring can be used as was the case here. 3k9 pullup resistors was also used on the i2c SDA and SCL lines.
+Short interconnect wiring must be used - else 100 to 220 ohm resistors inline for all or some of the i2s signal wiring can be used, as was the case here. 3k9 pullup resistors was also used on the i2c SDA and SCL lines.
 
 *Note 1: It is baffling why a search for an Arduino-type driver was unsuccessful (August 2020), especially considering that this CODEC is widely used by the Raspberry Pi community, which is also confirmed by Note 4 below.*<br>
 *Note 2: It should be possible to use the BTL speaker outputs isolated through 100uF capacitors, with common ground headphones - refer to the [block diagram](block-diagram.jpg).*<br>

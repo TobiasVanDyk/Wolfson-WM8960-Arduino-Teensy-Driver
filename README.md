@@ -11,7 +11,7 @@ Short interconnect wiring must be used - else 100 to 220 ohm resistors inline fo
 
 *Note 1: It should be possible to use the BTL speaker outputs isolated through 100uF capacitors, with common ground headphones - refer to the block diagram.*<br>
 *Note 2: See the WM8960-ALSA-driver folder above, for the original 2007 WM8960 ALSA SoC Audio driver from Wolfson Microelectronics (PLC).*<br>
-*Note 3: The latest datasheet from Cirrsu Logic for the WM8960 is dated as recent as 2019: [WM8960_v4.4.pdf](WM8960_v4.4.pdf).
+*Note 3: The latest datasheet from Cirrsu Logic for the WM8960 is dated as recent as 2019: [WM8960_v4.4.pdf](WM8960_v4.4.pdf).*
  
 [**Cirrus Logic Product WM8960**](https://www.cirrus.com/products/wm8960/) 
 

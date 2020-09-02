@@ -4,6 +4,7 @@
 // Demo code BSD license from STMicroelectronics
 // Also based on WM8960 ALSA SoC Audio driver from Wolfson Microelectronics
 // 2007 GPL2 license Liam Girdwood
+// Teensy libraries property of PJRC.com
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //       WM8960-DAC      Teensy 4.0 and 4.1    Teensy 3.6       Audioboard 3  WM8960 RPi GPIO Hat 
 //                                                                    2,4 5v

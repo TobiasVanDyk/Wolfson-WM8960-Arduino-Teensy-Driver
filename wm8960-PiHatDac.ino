@@ -12,7 +12,7 @@
 //  3,4  GND    Brown    GND                   GND (not AGnd)                 6   GND
 //  5,6  SDA     Gray    18 SDA0               18 SDA0         18 SDA         3   SDA
 //  7,8  SCL   Orange    19 SCL0               19 SCL0         19 SCL         5   SCL
-//  9,10 CLK     Blue    21 BCLK1              9 BCK           9 BCLK        12  PCMCLK BCLK
+//  9,10 CLK     Blue    21 BCLK1              9 BCK           9 BCLK         12  PCMCLK BCLK
 // 11,12 WS     White    20 LRCLK1             23 LRCK         23 LRCLK       35  PCM_FS LRCLK i2s Frame clock input
 // 13    RXSDA   Green    7 OUT1A              22 TX           22 TX          40  PCM_OUT I2S Data output
 // 14    TXSDA    Blue    8 TX1                13 RX           13 RX          38  PCM_IN  I2S Data input
@@ -205,7 +205,7 @@ uint8_t WM89060_Init(void)  {
   //if (res == 0) Serial.println("WM8960 Configure MIXER"); else return res;
   delay(delay1);
 
-  // Jack Detect
+  // Jack Detect - not hardware configured on HAT board
   // res =  WM8960_Write_Reg(0x18, 1<<6 | 0<<5);
   res =  WM8960_Write_Reg(0x18, 0x0000);
   delayMicroseconds(delay2);

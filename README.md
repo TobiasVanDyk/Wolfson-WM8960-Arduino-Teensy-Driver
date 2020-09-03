@@ -40,11 +40,11 @@ Short interconnect wiring must be used - else 100 to 220 ohm resistors inline fo
 <img src="images/teensy40-wm8960.jpg" width="600" />  
 <br>
   
-**Teensy 4.1 and the Waveshare WM8960 Raspberry Pi Hat as USB Audio DAC:**
+**Teensy 4.0 and the Waveshare WM8960 Raspberry Pi Hat as USB Audio DAC:**
 
 This combination of the CODEC and Teensy sounds much better in the low range end due to the LC filter at the headphone plug. It needs a new section of code to enable manual switching between speaker and headphones (similar to the option in the Linux alsamixer). Short interconnect wiring must be used - unlike the photo below.
 <p align="left">
-<img src="images/rpihat1.jpg" width="600" />  
+<img src="images/rpihat2.jpg" width="600" />  
 <br>
 
 **Raspberry Pi and Waveshare WM8960 as Audio DAC:**

@@ -1,9 +1,9 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // GPL3 license Tobias van Dyk Aug 2020
 // Based on Wolfson WM8960 STM32 demo code from Waveshare
-// Demo code BSD license from STMicroelectronics
+// Demo code BSD license from STMicroelectronics - folder STM32-Open103Z
 // Also based on WM8960 ALSA SoC Audio driver from Wolfson Microelectronics
-// 2007 GPL2 license Liam Girdwood
+// 2007 GPL2 license Liam Girdwood - folder WM8960-ALSA-driver
 // Teensy libraries property of PJRC.com
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //       WM8960-DAC      Teensy 4.0 and 4.1    Teensy 3.6      WM8960 RPi GPIO Hat 

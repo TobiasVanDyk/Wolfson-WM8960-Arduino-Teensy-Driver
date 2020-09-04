@@ -7,8 +7,8 @@
 // Teensy libraries property of PJRC.com
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //       WM8960-DAC      Teensy 4.0 and 4.1    Teensy 3.6      WM8960 RPi GPIO Hat 
-//                                                             2,4 5v
-//  1,2  VCC             3V3                   3V3             1   NC (3v3)
+//                       +5v                   +5v             2,4 +5v
+//  1,2  VCC             +3v3                  +3v3                 
 //  3,4  GND             GND                   GND (not AGnd)  6   GND
 //  5,6  SDA             18 SDA0               18 SDA0         3   SDA
 //  7,8  SCL             19 SCL0               19 SCL0         5   SCL

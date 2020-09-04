@@ -10,17 +10,17 @@
 //                       +5v                   +5v             2,4 +5v
 //  1,2  VCC             +3v3                  +3v3                 
 //  3,4  GND             GND                   GND (not AGnd)  6   GND
-//  5,6  SDA             18 SDA0               18 SDA0         3   SDA
-//  7,8  SCL             19 SCL0               19 SCL0         5   SCL
-//  9,10 CLK             21 BCLK1              9 BCK           12  PCMCLK BCLK
-// 11,12 WS              20 LCRLK1             23 LCRLK        35  PCM_FS LRCLK i2s Frame clock input
+//  5,6  SDA             18 SDA                18 SDA          3   SDA
+//  7,8  SCL             19 SCL                19 SCL          5   SCL
+//  9,10 SCLK            21 BCLK               9 BCLK          12  PCMCLK BCLK
+// 11,12 WS              20 LRCLK              23 LRCLK        35  PCM_FS LRCLK i2s Frame clock input
 // 13    RXSDA            7 OUT1A              22 TX           40  PCM_OUT I2S Data output
 // 14    TXSDA            8 TX1                13 RX           38  PCM_IN  I2S Data input
 // 15    RXMCLK                                                    I2S System Clock(Sending)
 // 16    TXMCLK                                                    I2SSystem Clock(Receive)
 // WM8960_ADDRESS = 0x1a 
-// MCLK signal transmitted (TX MCLK RX) MCLK signal transmitted   
-///////////////////////////////////////////////////////////////////////////////////////////////////////////
+// MCLK (TX MCLK RX) not connected - both boards configured as i2s servants (previously sl**e)  
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 #include <Wire.h>
 

@@ -1,26 +1,26 @@
-////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // GPL3 license Tobias van Dyk Aug 2020
 // Based on Wolfson WM8960 STM32 demo code from Waveshare
 // Demo code BSD license from STMicroelectronics - folder STM32-Open103Z
 // Also based on WM8960 ALSA SoC Audio driver from Wolfson Microelectronics
 // 2007 GPL2 license Liam Girdwood - folder WM8960-ALSA-driver
 // Teensy libraries property of PJRC.com
-////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//       WM8960-DAC      Teensy 4.0 and 4.1    Teensy 3.6      WM8960 RPi GPIO Hat 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//       WM8960-DAC      Teensy 4.0 and 4.1    Teensy 3.6      WM8960 RPi GPIO Hat    Bus
 //                       +5v                   +5v             2,4 +5v
 //  1,2  VCC             +3v3                  +3v3                 
 //  3,4  GND             GND                   GND (not AGnd)  6   GND
-//  5,6  SDA             18 SDA                18 SDA          3   SDA
-//  7,8  SCL             19 SCL                19 SCL          5   SCL
-//  9,10 SCLK            21 BCLK               9 BCLK          12  PCMCLK BCLK
-// 11,12 WS              20 LRCLK              23 LRCLK        35  PCM_FS LRCLK i2s Frame clock input
-// 13    RXSDA            7 OUT1A              22 TX           40  PCM_OUT I2S Data output
-// 14    TXSDA            8 TX1                13 RX           38  PCM_IN  I2S Data input
-// 15    RXMCLK                                                    I2S System Clock(Sending)
-// 16    TXMCLK                                                    I2SSystem Clock(Receive)
+//  5,6  SDA             18 SDA                18 SDA          3   SDA                i2c
+//  7,8  SCL             19 SCL                19 SCL          5   SCL                i2c
+//  9,10 SCLK            21 BCLK                9 BCLK         12  PCMCLK BCLK
+// 11,12 WS              20 LRCLK              23 LRCLK        35  PCM_FS LRCLK       i2s Frame clock input
+// 13    RXSDA            7 OUT1A              22              40  PCM_OUT            i2s Data output
+// 14    TXSDA            8 IN1                13 RX           38  PCM_IN             i2s Data input
+// 15    RX-MCLK                                                                      i2s Master Clock (Send)
+// 16    TX-MCLK                                                                      i2s Master Clock (Receive)
 // WM8960_ADDRESS = 0x1a 
 // MCLK (TX MCLK RX) not connected - both boards configured as i2s servants/followers (previously sl**e)  
-////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 #include <Wire.h>
 

@@ -19,7 +19,7 @@
 // 15    RXMCLK                                                    I2S System Clock(Sending)
 // 16    TXMCLK                                                    I2SSystem Clock(Receive)
 // WM8960_ADDRESS = 0x1a 
-// MCLK (TX MCLK RX) not connected - both boards configured as i2s servants (previously sl**e)  
+// MCLK (TX MCLK RX) not connected - both boards configured as i2s servants/followers (previously sl**e)  
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 #include <Wire.h>

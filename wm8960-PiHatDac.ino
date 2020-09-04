@@ -6,6 +6,8 @@
 // 2007 GPL2 license Liam Girdwood - folder WM8960-ALSA-driver
 // Teensy libraries property of PJRC.com
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//  WM8960 i2c ADDRESS = 0x1a  
+//
 //       WM8960-DAC      Teensy 4.0 and 4.1    Teensy 3.6      WM8960 RPi GPIO Hat    Bus
 //                       +5v                   +5v             2,4 +5v
 //  1,2  VCC             +3v3                  +3v3                 
@@ -16,10 +18,9 @@
 // 11,12 WS              20 LRCLK              23 LRCLK        35  PCM_FS LRCLK       i2s Frame clock input
 // 13    RXSDA            7 OUT1A              22              40  PCM_OUT            i2s Data output
 // 14    TXSDA            8 IN1                13 RX           38  PCM_IN             i2s Data input
-// 15    RX-MCLK                                                                      i2s Master Clock (Send)
-// 16    TX-MCLK                                                                      i2s Master Clock (Receive)
-// WM8960_ADDRESS = 0x1a 
-// MCLK (TX MCLK RX) not connected   
+// 15    RX-MCLK                                                   MCLK N/A           i2s Master Clock (Send)
+// 16    TX-MCLK                                                   MCLK N/A           i2s Master Clock (Receive)
+//       MCLK available but not connected                          MCLK not available at GPIO connector
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 #include <Wire.h>
 

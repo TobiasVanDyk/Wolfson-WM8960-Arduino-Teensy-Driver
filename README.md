@@ -12,7 +12,7 @@ Short interconnect wiring must be used - else 100 to 220 ohm resistors inline fo
 *Note 1: It is baffling why a search for an Arduino-ready driver was unsuccessful (August 2020), especially considering that this CODEC is widely used by the Raspberry Pi community, and therefore is still in continuing demand, as confirmed by Note 4 below.*<br>
 *Note 2: It should be possible to use the BTL speaker outputs isolated through 100uF capacitors, with common ground headphones - refer to the [block diagram](block-diagram.jpg).*<br>
 *Note 3: See the WM8960-ALSA-driver folder above, for the original 2007-2011 WM8960 ALSA SoC Audio driver from Wolfson Microelectronics (PLC).*<br>
-*Note 4: The latest datasheet from Cirrus Logic for the WM8960 is dated as recent as 2019: [WM8960_v4.4.pdf](WM8960_v4.4.pdf).*
+*Note 4: The latest datasheet from Cirrus Logic for the WM8960 is dated as recent as 2019: [WM8960_v4.4.pdf](WM8960_v4.4.pdf).*<br>
 *Note 5: The headphone output is also used as a line output. On the General DAC type board there is also one input available on the line output jack.*
 
 Table 1: Connections between WM8960 Raspberry Pi HAT and Teeensy 3x and 4x: 

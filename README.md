@@ -13,6 +13,34 @@ Short interconnect wiring must be used - else 100 to 220 ohm resistors inline fo
 *Note 2: It should be possible to use the BTL speaker outputs isolated through 100uF capacitors, with common ground headphones - refer to the [block diagram](block-diagram.jpg).*<br>
 *Note 3: See the WM8960-ALSA-driver folder above, for the original 2007-2011 WM8960 ALSA SoC Audio driver from Wolfson Microelectronics (PLC).*<br>
 *Note 4: The latest datasheet from Cirrus Logic for the WM8960 is dated as recent as 2019: [WM8960_v4.4.pdf](WM8960_v4.4.pdf).*
+
+Table 1: Connections between WM8960 Raspberry Pi HAT and Teeensy 3x and 4x: 
+
+| WM8960 RPi  | Teensy 3.x | Teensy 4.x  | 
+|:------------|:-----------|:------------|
+| 2,4 +5v     |	+5v        | +5v         |
+| 6   GND     | GND 	   | GND 	 | 
+| 3   SDA     |	18 SDA 	   | 18 SDA      | 
+| 5   SCL     |	19 SCL     | 19 SCL      | 
+| 12  PCM-CLK |	9  BCLK    | 21 BCLK     |
+| 35  PCM-FS  | 23 LRCLK   | 20 LRCLK    |
+| 38  PCM-IN  | 8  TX      | 13 SCK      |
+| 40  PCM-OUT | 7  RX      | 22 CTX      |
+
+
+Table 2: Connections between WM8960 General DAC and Teeensy 3x and 4x: 
+
+| WM8960 DAC    | Teensy 3.x | Teensy 4.x  | 
+|:--------------|:-----------|:------------|
+| 1,2  +3v3     | +3v3       | +3v3        |
+| 3,4   GND     | GND        | GND 	   | 
+| 5,6   SDA     | 18 SDA     | 18 SDA      | 
+| 7,8   SCL     | 19 SCL     | 19 SCL      | 
+| 9,10  CLK     | 9  BCLK    | 21 BCLK     |
+| 11,12 WS      | 23 LRCLK   | 20 LRCLK    |
+| 13    RXSDA   | 7  RX      | 22 CTX      |
+| 14    TXSDA   | 8  TX      | 13 SCK      |
+
  
 [**Cirrus Logic Product WM8960**](https://www.cirrus.com/products/wm8960/) 
 

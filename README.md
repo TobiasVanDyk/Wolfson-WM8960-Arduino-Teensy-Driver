@@ -5,7 +5,7 @@ Note the difference in the headphone output circuit (Note 5), between the Wavesh
 
 In addition the standard Teensy main volume control via two mono amplifiers has been added for the hat type board (else only the current windows application control the DAC volume). Further testing on setting the WM8960 analog output volume directly through i2c control is also in progress.
 
-Subjectively this 2007, 14 year old DAC (Notes 3 and 4) outperforms its specifications. Listening to the same source material through the headphone output on the waveshare wm8960 hat dac, matches the listening experience when using the same headphones with a Creative AE-5 (which has a dedicated headphone amp), setup.
+Subjectively this 2007, 14 year old DAC (Notes 3 and 4) outperforms its specifications. Listening to the same source material through the headphone output on the waveshare wm8960 hat dac, matches the listening experience when using the same headphones with a Creative AE-5 (which has a dedicated headphone amp), setup. Both module types are configured to be i2s servants/followers (previously sl--es), and MCLK is not connected.
 
 Short interconnect wiring must be used - else 100 to 220 ohm resistors inline for all or some of the i2s signal wiring can be used, as was the case here. 3k9 pullup resistors was also used on the i2c SDA and SCL lines.
 

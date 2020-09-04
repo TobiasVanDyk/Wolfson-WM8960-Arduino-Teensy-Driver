@@ -41,7 +41,7 @@ Table 2: Connections between WM8960 General DAC and Teeensy 3x and 4x:
 | 11,12 WS      | 23 LRCLK   | 20 LRCLK    |
 | 13    RXSDA   | 7  RX      | 22          |
 | 14    TXSDA   | 8  TX      | 13 SCK      |
-
+| 15,16 MCLKT/R |            |             |
  
 [**Cirrus Logic Product WM8960**](https://www.cirrus.com/products/wm8960/) 
 

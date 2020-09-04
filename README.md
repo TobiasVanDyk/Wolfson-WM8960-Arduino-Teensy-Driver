@@ -31,17 +31,17 @@ Table 1: Connections between WM8960 Raspberry Pi HAT and Teeensy 3x and 4x:
 
 Table 2: Connections between WM8960 General DAC and Teeensy 3x and 4x: 
 
-| WM8960 DAC    | Teensy 4.x | Teensy 3.x  | 
-|:--------------|:-----------|:------------|
-| 1,2  +3v3     | +3v3       | +3v3        |
-| 3,4   GND     | GND        | GND 	       | 
-| 5,6   SDA     | 18 SDA     | 18 SDA      | 
-| 7,8   SCL     | 19 SCL     | 19 SCL      | 
-| 9,10  SCLK    | 9  BCLK    | 21 BCLK     |
-| 11,12 WS      | 23 LRCLK   | 20 LRCLK    |
-| 13    RXSDA   | 7  RX      | 22          |
-| 14    TXSDA   | 8  TX      | 13 SCK      |
-| 15,16 MCLKT/R |            |             |
+| WM8960 DAC     | Teensy 4.x | Teensy 3.x  | 
+|:---------------|:-----------|:------------|
+| 1,2  +3v3      | +3v3       | +3v3        |
+| 3,4   GND      | GND        | GND 	       | 
+| 5,6   SDA      | 18 SDA     | 18 SDA      | 
+| 7,8   SCL      | 19 SCL     | 19 SCL      | 
+| 9,10  SCLK     | 9  BCLK    | 21 BCLK     |
+| 11,12 WS       | 23 LRCLK   | 20 LRCLK    |
+| 13    RXSDA    | 7  RX      | 22          |
+| 14    TXSDA    | 8  TX      | 13 SCK      |
+| 15,16 MCLK T/R |            |             |
  
 [**Cirrus Logic Product WM8960**](https://www.cirrus.com/products/wm8960/) 
 

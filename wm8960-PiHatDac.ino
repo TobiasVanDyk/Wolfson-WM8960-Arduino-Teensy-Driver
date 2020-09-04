@@ -13,7 +13,7 @@
 //  5,6  SDA             18 SDA0               18 SDA0         3   SDA
 //  7,8  SCL             19 SCL0               19 SCL0         5   SCL
 //  9,10 CLK             21 BCLK1              9 BCK           12  PCMCLK BCLK
-// 11,12 WS              20 LRCLK1             23 LRCK         35  PCM_FS LRCLK i2s Frame clock input
+// 11,12 WS              20 LCRLK1             23 LCRLK        35  PCM_FS LRCLK i2s Frame clock input
 // 13    RXSDA            7 OUT1A              22 TX           40  PCM_OUT I2S Data output
 // 14    TXSDA            8 TX1                13 RX           38  PCM_IN  I2S Data input
 // 15    RXMCLK                                                    I2S System Clock(Sending)
@@ -21,7 +21,6 @@
 // WM8960_ADDRESS = 0x1a 
 // MCLK signal transmitted (TX MCLK RX) MCLK signal transmitted   
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
-
 #include <Wire.h>
 
 int led = LED_BUILTIN;

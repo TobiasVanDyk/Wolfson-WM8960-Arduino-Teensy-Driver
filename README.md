@@ -3,9 +3,9 @@ Proto-driver (eventually as a library similar to the STM32 library in the folder
 
 Note the difference in the headphone output circuit (Note 5), between the Waveshare Raspberry Pi Hat (which is also used in the Seeed Studio Re-Speaker Hat), and the Waveshare Audio CODEC module. That specific board type and the Teensy, has an better low end range, and also has an LC filter at the headphone plug. The hat type of audio codec module lacks the optional hardware configuration for headphone-insert detection, and it needs an additional code to enable manual switching between speaker and headphones (similar to the option in the Linux alsamixer). Currently both outputs are enabled for the hat type board. The other type of audioboard has the headphone auto-detection circuitry enabled.
 
-The standard Teensy main volume control via two mono amplifiers has been added for the hat type board (else only the current windows application control the DAC volume). Further testing on setting the WM8960 analog output volume directly through i2c control is also possible.
+The standard Teensy main volume control via two mono amplifiers has been added for the hat type board (else only the current windows application control the DAC volume). Setting the WM8960 analog output volume directly through i2c control is also possible.
 
-Subjectively this 2007, 14 year old DAC (Notes 3 and 4) outperforms its specifications. Listening to the same source material through the headphone output on the waveshare wm8960 hat dac, matches the listening experience when using the same headphones with a Creative AE-5 (which has a dedicated headphone amp), setup. Both module types do not have MCLK connected to the MCU.
+Subjectively this 2007, 14 year old DAC (Notes 3 and 4) outperforms its specifications. Listening to the same source material through the headphone output on the waveshare wm8960 hat dac, are similar to the listening experience when using the same source material and headphones with a Creative AE-5 (which has a dedicated headphone amplifier). Both module types do not need/have MCLK connected.
 
 Short interconnect wiring must be used - else 100 to 220 ohm resistors inline for all or some of the i2s signal wiring can be used, as was the case here. 3k9 pullup resistors was also used on the i2c SDA and SCL lines.
 

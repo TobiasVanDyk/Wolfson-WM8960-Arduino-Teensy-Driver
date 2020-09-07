@@ -23,7 +23,7 @@ Table 1: Connections between WM8960 Raspberry Pi HAT and Teeensy 3x and 4x:
 | 6   GND     | GND 	      | GND 	       | 
 | 3   SDA     |	18 SDA 	   | 18 SDA      | 
 | 5   SCL     |	19 SCL     | 19 SCL      | 
-| 12  PCM-CLK |	9  BCLK    | 21 BCLK     |
+| 12  PCM-CLK |	21 BCLK    | 9  BCLK     |
 | 35  PCM-FS  | 23 LRCLK   | 20 LRCLK    |
 | 38  PCM-IN  | 8  TX      | 13 SCK      |
 | 40  PCM-OUT | 7  RX      | 22          |
@@ -37,7 +37,7 @@ Table 2: Connections between WM8960 General DAC and Teeensy 3x and 4x:
 | 3,4   GND      | GND        | GND 	       | 
 | 5,6   SDA      | 18 SDA     | 18 SDA      | 
 | 7,8   SCL      | 19 SCL     | 19 SCL      | 
-| 9,10  SCLK     | 9  BCLK    | 21 BCLK     |
+| 9,10  SCLK     | 21 BCLK    | 9  BCLK     |
 | 11,12 WS       | 23 LRCLK   | 20 LRCLK    |
 | 13    RXSDA    | 7  RX      | 22          |
 | 14    TXSDA    | 8  TX      | 13 SCK      |

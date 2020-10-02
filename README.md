@@ -5,11 +5,11 @@ Note the difference in the headphone output circuit (Note 5), between the Wavesh
 
 The standard Teensy main volume control via two mono amplifiers has been added for the hat type board (else only the current windows application control the DAC volume). Setting the WM8960 analog output volume directly through i2c control is also possible.
 
-Subjectively this 2007, 14 year old DAC (Notes 3 and 4) outperforms its specifications. Listening to the same source material through the headphone output on the waveshare wm8960 hat dac, are similar to the listening experience when using the same source material and headphones with a Creative AE-5 (which has a dedicated headphone amplifier). Both module types do not need/have MCLK connected.
+Subjectively this 2007, 14 year old DAC (Notes 3 and 4) outperforms its specifications. Listening to the same source material through the headphone output on the waveshare wm8960 hat dac, are similar to the listening experience when using the same source material and headphones with a Creative AE-5 (which has a dedicated headphone amplifier). Both module types do not need/have a MCLK connected.
 
 Short interconnect wiring must be used - else 100 to 220 ohm resistors inline for all or some of the i2s signal wiring can be used, as was the case here. 3k9 pullup resistors was also used on the i2c SDA and SCL lines.
 
-*Note 1: It is puzzlig why a search for an Arduino driver was unsuccessful (August 2020), especially considering that this CODEC is widely used by the Raspberry Pi community, and is still in considerable demand, as seemingly confirmed by Note 4 below.*<br>
+*Note 1: It is puzzling why a search for an Arduino driver was unsuccessful (August 2020), especially considering that this CODEC is widely used by the Raspberry Pi community, and is still in considerable demand, as seemingly confirmed by Note 4 below.*<br>
 *Note 2: It should be possible to use the BTL speaker outputs isolated through 100uF capacitors, with common ground headphones - refer to the [block diagram](block-diagram.jpg).*<br>
 *Note 3: See the WM8960-ALSA-driver folder above, for the original 2007-2011 WM8960 ALSA SoC Audio driver from Wolfson Microelectronics (PLC).*<br>
 *Note 4: The latest datasheet from Cirrus Logic for the WM8960 is dated as recent as 2019: [WM8960_v4.4.pdf](WM8960_v4.4.pdf).*<br>

@@ -1,5 +1,5 @@
 # Wolfson-WM8960-Arduino-Teensy-Driver
-<img src="SparkFun-WM8960/SparkFun_Audio_Codec_Breakout.jpg" width="16" height="16"/> January 2023: There is now a [**Sparkfun WM8960 Breakout Board**](https://www.sparkfun.com/products/21250) and a feature-complete [**Aruino driver library**](https://github.com/sparkfun/SparkFun_WM8960_Arduino_Library).
+<img src="SparkFun-WM8960/SparkFun_Audio_Codec_Breakout.jpg" width="16" height="16"/> January 2023: There is now a [**Sparkfun WM8960 Breakout Board**](https://www.sparkfun.com/products/21250) and a feature-complete [**Arduino driver library**](https://github.com/sparkfun/SparkFun_WM8960_Arduino_Library).
 
 Proto-driver (eventually as a library similar to the STM32 library in the folder STM32-Open103Z), and example applications for Arduino and Teensy MCUs (Note 1), using the Wolfson WM8960 Audio DAC, with separate stereo BTL 1W speaker and headphone amplifiers (common grounded - Note 2), and a fractional-N PLL (which is missing from the the WM8731 DAC), enabling the use of one external crystal supporting most commonly-used audio-clock needs (Note 4 page 60). 
 

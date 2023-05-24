@@ -12,11 +12,12 @@ Subjectively this 2007, 14 year old DAC (Notes 3 and 4) outperforms its specific
 Short interconnect wiring must be used - else 100 to 220 ohm resistors inline for all or some of the i2s signal wiring can be used, as was the case here. 3k9 pullup resistors was also used on the i2c SDA and SCL lines.
 
 *Note 1: It is puzzling why a search for an Arduino driver was unsuccessful (August 2020), especially considering that this CODEC is widely used by the Raspberry Pi community, and is still in considerable demand, as seemingly confirmed by Note 4 below.*<br>
-*Note 2: It should be possible to use the BTL speaker outputs isolated through 100uF capacitors, with common ground headphones - refer to the [block diagram](block-diagram.jpg).*<br>
+*Note 2: It should be possible to use the BTL speaker outputs isolated through 100uF capacitors, with common ground headphones - refer to the [**block diagram**](block-diagram.jpg).*<br>
 *Note 3: See the WM8960-ALSA-driver folder above, for the original 2007-2011 WM8960 ALSA SoC Audio driver from Wolfson Microelectronics (PLC).*<br>
-*Note 4: The latest datasheet from Cirrus Logic for the WM8960 is dated as recent as 2019: [WM8960_v4.4.pdf](WM8960_v4.4.pdf).*<br>
+*Note 4: The latest datasheet from Cirrus Logic for the WM8960 is dated as recent as 2019: [**WM8960_v4.4.pdf**](WM8960_v4.4.pdf).*<br>
 *Note 5: The headphone output is also used as a line output. On the General DAC type board there is also one input available on the line output jack.*<br>
-*Note 6: Infineon released a 16bit/24bit/32bit and 44.1kHz/48kHz [**driver for the WM8960**](https://github.com/Infineon/audio-codec-wm8960) about two years ago (Jul 21, 2021). This driver was recently [**adapted by pschatzmann**](https://github.com/pschatzmann/arduino-wm8960) for Arduino to use the Wire API. Refer to the [**Infineon-Arduino-wm8960**](/Infineon-Arduino-wm8960) section.*
+*Note 6: Infineon released a 16bit/24bit/32bit and 44.1kHz/48kHz [**driver for the WM8960**](https://github.com/Infineon/audio-codec-wm8960) about two years ago (Jul 21, 2021). This driver was recently [**adapted by pschatzmann**](https://github.com/pschatzmann/arduino-wm8960) for Arduino to use the Wire API. Refer to the [**Infineon-Arduino-wm8960**](/Infineon-Arduino-wm8960) section.*<br>
+*Note 7: Cirrus Logic has indicated that they will [**stop manufacturing the WM8960 during 2024**(https://www.cirrus.com/products/eol/). The [**WM8962B**](https://master-nq.webp2.cirrus.com/products/wm8962b/) is recommended as a replacement.*
 
 Table 1: Connections between WM8960 Raspberry Pi HAT and Teeensy 3x and 4x: 
 

@@ -17,7 +17,7 @@ Short interconnect wiring must be used - else 100 to 220 ohm resistors inline fo
 *Note 4: The latest datasheet from Cirrus Logic for the WM8960 is dated as recent as 2019: [**WM8960_v4.4.pdf**](WM8960_v4.4.pdf).*<br>
 *Note 5: The headphone output is also used as a line output. On the General DAC type board there is also one input available on the line output jack.*<br>
 *Note 6: Infineon released a 16bit/24bit/32bit and 44.1kHz/48kHz [**driver for the WM8960**](https://github.com/Infineon/audio-codec-wm8960) about two years ago (Jul 21, 2021). This driver was recently [**adapted by pschatzmann**](https://github.com/pschatzmann/arduino-wm8960) for Arduino to use the Wire API. Refer to the [**Infineon-Arduino-wm8960**](/Infineon-Arduino-wm8960) section.*<br>
-*Note 7: Cirrus Logic has indicated that they will [**stop manufacturing the WM8960 during 2023**](https://www.cirrus.com/products/eol/). The [**WM8962B**](https://master-nq.webp2.cirrus.com/products/wm8962b/) is recommended as a replacement. Note  that is also an old design the [**linux ALSA driver**](https://github.com/torvalds/linux/blob/master/sound/soc/codecs/wm8962.c) is dated 2010*
+*Note 7: Cirrus Logic has indicated that they will [**stop manufacturing the WM8960 during 2023**](https://www.cirrus.com/products/eol/). The [**WM8962B**](https://master-nq.webp2.cirrus.com/products/wm8962b/) is recommended as a replacement. Note that this is also an old design the [**linux ALSA driver**](https://github.com/torvalds/linux/blob/master/sound/soc/codecs/wm8962.c) is dated 2010*
 
 Table 1: Connections between WM8960 Raspberry Pi HAT and Teeensy 3x and 4x: 
 
